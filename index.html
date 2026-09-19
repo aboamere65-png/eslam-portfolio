@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Eslam - Zagazig Tech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background: #f8f0ff;
+            background-image:
+                radial-gradient(circle at 10% 20%, #a78bfa33 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, #f472b633 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, #60a5fa33 0%, transparent 50%);
+            font-family: system-ui, Tahoma;
+            color: #222
+        }
+
+        .wrap {
+            max-width: 440px;
+            margin: auto;
+            padding: 14px
+        }
+
+        .lang {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            z-index: 99;
+            background: #111;
+            color: #fff;
+            border: 0;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: 900
+        }
+
+        .head {
+            text-align: center;
+            padding: 22px 14px;
+            background: linear-gradient(135deg, #7c3aed, #ec4899, #06b6d4);
+            border-radius: 22px;
+            color: #fff;
+            box-shadow: 0 10px 25px #7c3aed44;
+            margin-top: 50px
+        }
+
+        .head h1 {
+            font-size: 34px
+        }
+
+        .q-box {
+            background: #fff;
+            border-radius: 18px;
+            padding: 14px;
+            margin: 12px 0;
+            border: 2px solid #eee;
+            box-shadow: 0 6px 15px #00000008;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .q-box:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+        }
+
+        .q1:before {
+            background: #7c3aed
+        }
+
+        .q1 {
+            border-color: #e9d5ff
+        }
+
+        .q2:before {
+            background: #06b6d4
+        }
+
+        .q2 {
+            border-color: #a5f3fc
+        }
+
+        .q3:before {
+            background: #ec4899
+        }
+
+        .q3 {
+            border-color: #fbcfe8
+        }
+
+        .q4:before {
+            background: #f59e0b
+        }
+
+        .q4 {
+            border-color: #fde68a
+        }
+
+        .q5:before {
+            background: #10b981
+        }
+
+        .q5 {
+            border-color: #a7f3d0
+        }
+
+        .q6:before {
+            background: #ef4444
+        }
+
+        .q6 {
+            border-color: #fecaca
+        }
+
+        .q-title {
+            font-weight: 900;
+            font-size: 15px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            gap: 6px
+        }
+
+        .q-text {
+            font-size: 13px;
+            color: #444;
+            text-align: justify;
+            line-height: 1.6
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            margin: 14px 0;
+            background: #fff;
+            padding: 12px;
+            border-radius: 16px
+        }
+
+        .icons span {
+            font-size: 22px
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="lang" onclick="toggleLang()" id="btn">EN</button>
+
+    <div class="wrap">
+
+        <div class="head">
+            <h1 data-ar="✨ إسلام محمد ✨" data-en="✨ Eslam Mohamed ✨">✨ إسلام محمد ✨</h1>
+            <p data-ar="🎨 من الزقازيق - مطور بألوان جميلة ورموز كتير 💜"
+                data-en="🎨 From Zagazig - Developer with beautiful colors & symbols 💜">🎨 من الزقازيق - مطور بألوان
+                جميلة ورموز كتير 💜</p>
+        </div>
+
+        <div class="icons">
+            <span>⚙️</span><span>💜</span><span>🚀</span><span>💻</span><span>🎯</span><span>{
+                }</span><span>&lt;/&gt;</span><span>❤️</span>
+        </div>
+
+        <div class="q-box q1">
+            <div class="q-title" data-ar="❓ من أنت؟" data-en="❓ Who are you?">❓ من أنت؟</div>
+            <div class="q-text"
+                data-ar="⚡ أنا إسلام محمد من الزقازيق 🗺️، طالب في WE للتكنولوجيا 👨‍💻. بحب الألوان الجميلة والرموز الكتير 🎨✨ وبحب أعمل مواقع مضغوطة تظهر على التليفون 📱."
+                data-en="⚡ I am Eslam from Zagazig 🗺️, WE School student 👨‍💻. I love beautiful colors and many symbols 🎨✨ and I build compressed mobile sites 📱.">
+                ⚡ أنا إسلام محمد من الزقازيق 🗺️، طالب في WE للتكنولوجيا 👨‍💻. بحب الألوان الجميلة والرموز الكتير 🎨✨
+                وبحب أعمل مواقع مضغوطة تظهر على التليفون 📱.
+            </div>
+        </div>
+
+        <div class="q-box q2">
+            <div class="q-title" data-ar="🎯 ايه هو حلمك؟" data-en="🎯 What is your dream?">🎯 ايه هو حلمك؟</div>
+            <div class="q-text"
+                data-ar="💡 حلمي أعمل مركز الزقازيق للتكنولوجيا 🏢🤖. مكان فيه 🖨️ 3D Printer و 🔦 Laser Cutter و 🦾 روبوتات. مكان يعلم شباب الشرقية كل حاجة عن البرمجة والهندسة 💜🚀."
+                data-en="💡 My dream is Zagazig Tech Center 🏢🤖. A place with 🖨️ 3D Printer, 🔦 Laser Cutter & 🦾 Robots. To teach Sharkia youth coding & engineering 💜🚀.">
+                💡 حلمي أعمل مركز الزقازيق للتكنولوجيا 🏢🤖. مكان فيه 🖨️ 3D Printer و 🔦 Laser Cutter و 🦾 روبوتات.
+                مكان يعلم شباب الشرقية كل حاجة عن البرمجة والهندسة 💜🚀.
+            </div>
+        </div>
+
+        <div class="q-box q3">
+            <div class="q-title" data-ar="💻 ايه مشاريعك؟" data-en="💻 What are your projects?">💻 ايه مشاريعك؟</div>
+            <div class="q-text"
+                data-ar="📦 عندي 3 مشاريع: <br>1️⃣ Smart Note 📝 - نوتة بتشتغل من غير نت <br>2️⃣ فني مبتكر 🏠 - بيت ذكي بـ Arduino و ESP32 <br>3️⃣ بورتفوليو بألوان نفسجي 💜"
+                data-en="📦 I have 3 projects: <br>1️⃣ Smart Note 📝 - Offline note <br>2️⃣ Fanni Mobtaker 🏠 - Smart home with Arduino & ESP32 <br>3️⃣ Portfolio with purple colors 💜">
+                📦 عندي 3 مشاريع: <br>1️⃣ Smart Note 📝 - نوتة بتشتغل من غير نت <br>2️⃣ فني مبتكر 🏠 - بيت ذكي بـ
+                Arduino و ESP32 <br>3️⃣ بورتفوليو بألوان نفسجي 💜
+            </div>
+        </div>
+
+        <div class="q-box q4">
+            <div class="q-title" data-ar="🎨 ايه الألوان اللي بتحبها؟" data-en="🎨 What colors do you like?">🎨 ايه
+                الألوان اللي بتحبها؟</div>
+            <div class="q-text"
+                data-ar="🌈 بحب النفسجي الفاتح #f3ecff 💜، والأخضر النيون #00ff88 💚، والأزرق #06b6d4 💙، والبينك #ec4899 💖. بحب أخلطهم مع بعض عشان يبقى شكل هندسي جميل ✨🔷🔶"
+                data-en="🌈 I love light purple #f3ecff 💜, neon green #00ff88 💚, blue #06b6d4 💙, pink #ec4899 💖. I mix them for a beautiful geometric look ✨🔷🔶">
+                🌈 بحب النفسجي الفاتح #f3ecff 💜، والأخضر النيون #00ff88 💚، والأزرق #06b6d4 💙، والبينك #ec4899 💖. بحب
+                أخلطهم مع بعض عشان يبقى شكل هندسي جميل ✨🔷🔶
+            </div>
+        </div>
+
+        <div class="q-box q5">
+            <div class="q-title" data-ar="⚙️ ايه مهاراتك؟" data-en="⚙️ What are your skills?">⚙️ ايه مهاراتك؟</div>
+            <div class="q-text"
+                data-ar="🛠️ HTML5 📄 | CSS3 🎨 | JS ⚡ | Python 🐍 | Arduino 🔌 | ESP32 📡 | تصميم مضغوط للموبايل 📱 | كتابة محتوى مليان كلام ✍️"
+                data-en="🛠️ HTML5 📄 | CSS3 🎨 | JS ⚡ | Python 🐍 | Arduino 🔌 | ESP32 📡 | Mobile-first design 📱 | Content writing ✍️">
+                🛠️ HTML5 📄 | CSS3 🎨 | JS ⚡ | Python 🐍 | Arduino 🔌 | ESP32 📡 | تصميم مضغوط للموبايل 📱 | كتابة
+                محتوى مليان كلام ✍️
+            </div>
+        </div>
+
+        <div class="q-box q6">
+            <div class="q-title" data-ar="📱 ليه تصميمك مضغوط؟" data-en="📱 Why compressed design?">📱 ليه تصميمك مضغوط؟
+            </div>
+            <div class="q-text"
+                data-ar="🤔 عشان 90% من أهل الزقازيق بيفتحوا من الموبايل 📱. فأنا بعمل كل حاجة فوق بعض، مربعات كتير 📦📦📦، كل مربع فيه سؤال وجواب، العميل يقلب بسرعة ويفهم كل حاجة من غير ما يتوه 🔍✨"
+                data-en="🤔 Because 90% in Zagazig use mobile 📱. So I make everything stacked, many boxes 📦📦📦, each box has Q&A, client scrolls fast and understands without getting lost 🔍✨">
+                🤔 عشان 90% من أهل الزقازيق بيفتحوا من الموبايل 📱. فأنا بعمل كل حاجة فوق بعض، مربعات كتير 📦📦📦، كل
+                مربع فيه سؤال وجواب، العميل يقلب بسرعة ويفهم كل حاجة من غير ما يتوه 🔍✨
+            </div>
+        </div>
+
+        <div style="text-align:center;padding:15px;background:#fff;border-radius:16px;margin-top:10px">
+            <p style="font-size:22px">💜 ⚙️ 🚀 💻 🎨 ❤️ &lt;/&gt; { } 🔷 🔶 ✨</p>
+            <p style="font-size:12px;opacity:.6;margin-top:6px">كل الرموز دي بالكود - ألوان جميلة - خلفية نفسجي</p>
+        </div>
+
+    </div>
+
+    <script>
+        let isAr = true;
+        function toggleLang() {
+            isAr = !isAr;
+            document.documentElement.dir = isAr ? 'rtl' : 'ltr';
+            document.getElementById('btn').innerText = isAr ? 'EN' : 'عربي';
+            document.querySelectorAll('[data-ar]').forEach(el => {
+                el.innerHTML = isAr ? el.getAttribute('data-ar') : el.getAttribute('data-en');
+            });
+        }
+    </script>
+</body>
+
+</html>
